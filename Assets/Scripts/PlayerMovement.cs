@@ -11,10 +11,7 @@ public class PlayerMovement : MonoBehaviour
     AudioSource m_AudioSource;
     Vector3 m_Movement;
     Quaternion m_Rotation = Quaternion.identity;
-    
 
-
-    // Start is called before the first frame update
     void Start()
     {
         m_Animator = GetComponent<Animator>();
@@ -22,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
         m_AudioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float horizontal = Input.GetAxis("Horizontal");
@@ -34,14 +30,23 @@ public class PlayerMovement : MonoBehaviour
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
         bool isWalking = hasHorizontalInput || hasVerticalInput;
-
         m_Animator.SetBool("IsWalking", isWalking);
+
+        if (isWalking)
+        {
+            if (!m_AudioSource.isPlaying)
+            {
+                m_AudioSource.Play();
+            }
+        }
+        else
+        {
+            m_AudioSource.Stop();
+        }
 
         Vector3 desiredForward = Vector3.RotateTowards(transform.forward, m_Movement, turnSpeed * Time.deltaTime, 0f);
         m_Rotation = Quaternion.LookRotation(desiredForward);
     }
-
-
 
     void OnAnimatorMove()
     {
