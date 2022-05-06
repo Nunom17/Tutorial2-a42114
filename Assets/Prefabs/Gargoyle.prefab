@@ -165,6 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5852409403487785197}
   - component: {fileID: 1793186721362617073}
+  - component: {fileID: 1731524868631659744}
   m_Layer: 0
   m_Name: PointOfView
   m_TagString: Untagged
@@ -201,3 +202,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0.95}
+--- !u!114 &1731524868631659744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4843659473394825323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b946e72eeee46488a01d32fb9d33b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
