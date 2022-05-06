@@ -39,4 +39,5 @@ public class GameEnding : MonoBehaviour
             Application.Quit();
         }
     }
+
 }
