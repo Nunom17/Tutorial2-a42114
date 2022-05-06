@@ -187,6 +187,10 @@ PrefabInstance:
       value: Ghost (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
+      propertyPath: navMeshAgent
+      value: 
+      objectReference: {fileID: 3123738}
+    - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1359,7 +1363,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2528148, y: 1}
+    m_SensorSize: {x: 2.0248392, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4085,6 +4089,10 @@ PrefabInstance:
       value: Ghost (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
+      propertyPath: navMeshAgent
+      value: 
+      objectReference: {fileID: 1453206278}
+    - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4844,6 +4852,10 @@ PrefabInstance:
       value: Ghost (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
+      propertyPath: navMeshAgent
+      value: 
+      objectReference: {fileID: 2097820765}
+    - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
       propertyPath: waypoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -4897,38 +4909,16 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!1 &799181242649786543 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6254991885919462196, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
-  m_PrefabInstance: {fileID: 6762562629495266203}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &799181242649814159 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6254991885919174420, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
   m_PrefabInstance: {fileID: 6762562629495266203}
   m_PrefabAsset: {fileID: 0}
---- !u!195 &799181242659162987
+--- !u!195 &799181242659162987 stripped
 NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 799181242659162987, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
+  m_PrefabInstance: {fileID: 6762562629495266203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799181242649786543}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.25
-  m_Speed: 1.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0.2
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1145864660507638872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5062,13 +5052,9 @@ PrefabInstance:
       value: Ghost
       objectReference: {fileID: 0}
     - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
-      propertyPath: waypoints.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
-      propertyPath: waypoints.Array.data[0]
+      propertyPath: navMeshAgent
       value: 
-      objectReference: {fileID: 799181242649814159}
+      objectReference: {fileID: 799181242659162987}
     - target: {fileID: 8125954805224989933, guid: 80ef28497acdad946a4eeba3c2a44817, type: 3}
       propertyPath: waypoints.Array.data[1]
       value: 
@@ -5142,107 +5128,3 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8899862803486495112, guid: d4c867dfab176da4f9014fc7aa5029b6, type: 3}
   m_PrefabInstance: {fileID: 8899862803088010337}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &8899862803088010344
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8899862803088010339}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 07e520bb410492d47bf739846d70f2a3, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!81 &8899862803088010345
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8899862803088010339}
-  m_Enabled: 1
